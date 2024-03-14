@@ -8,4 +8,4 @@
 
     return result / numbers.Length;
 } 
- 
+  
