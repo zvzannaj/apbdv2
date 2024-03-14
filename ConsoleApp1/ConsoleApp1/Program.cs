@@ -7,5 +7,5 @@
     }
 
     return result / numbers.Length;
-}  
+}   
   
