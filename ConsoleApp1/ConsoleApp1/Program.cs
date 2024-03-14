@@ -1,11 +1,11 @@
-﻿static double GetAverage(int[] numbers)
+﻿static double GetAverage(int[] tab)
 {
     double result = 0.0;
-    for (int i = 0; i < numbers.Length; i++)
+    for (int i = 0; i < tab.Length; i++)
     {
-        result += numbers[i];
+        result += tab[i];
     }
 
-    return result / numbers.Length;
+    return result / tab.Length;
 }   
   
