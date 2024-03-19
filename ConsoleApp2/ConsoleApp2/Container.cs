@@ -3,9 +3,20 @@
 public abstract class Container : IContainer
 {
     public double CargoWeight { get; set; }
-    protected Container(double cargoWeight)
+    public double Height { get; set; }
+    public double Weight { get; set; }
+    public double Depth { get; set; }
+    private static int Count;
+    public string SerialNumber;
+    public double Capacity;
+    protected Container(double cargoWeight, double height, double weight, double depth, string type, double capacity)
     {
         CargoWeight = cargoWeight;
+        Height = height;
+        Weight = weight;
+        Depth = depth;
+        SerialNumber = "KON-" + type + " " + Count;
+        Capacity = capacity;
     }
 
 
