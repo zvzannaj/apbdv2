@@ -1,6 +1,6 @@
 ﻿namespace ConsoleApp2;
 
-public class LiquidContainer : Container, IHazardNotifer
+public class LiquidContainer : Container, IHazardNotifier
 {
     private bool IsSafe;
     public LiquidContainer(double cargoWeight, double height, double weight, double depth, double capacity, bool isSafe) : base(cargoWeight, height, weight, depth, "L", capacity)
@@ -14,20 +14,21 @@ public class LiquidContainer : Container, IHazardNotifer
         {
             if (cargoWeight <= 0.9 * Capacity)
                 base.Load(cargoWeight);
-            else ;
+            else 
+                Notify();
         }
         else
         {
             if (cargoWeight <= 0.5 * Capacity)
                 base.Load(cargoWeight);
-            else ;
+            else 
+                Notify();
         }
     }
 
     public void Notify()
     {
-       Console.WriteLine("Zaszła niebezpieczna sytuacja w kontenerze o numerze : " + SerialNumber);
-        
+        Console.WriteLine("Zaszła niebezpieczna sytuacja w kontenerze o numerze : " + SerialNumber);
     }
 }
 

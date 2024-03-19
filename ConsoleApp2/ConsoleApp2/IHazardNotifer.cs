@@ -1,6 +1,6 @@
 ﻿namespace ConsoleApp2;
 
-public interface IHazardNotifer
+public interface IHazardNotifier
 {
     public void Notify();
 }
