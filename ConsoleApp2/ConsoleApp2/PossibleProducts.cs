@@ -2,5 +2,5 @@
 
 public enum PossibleProducts
 {
-    Banana
+    Banana = 20, Chocolate = 10, Fish = 2, Meat = 5
 }

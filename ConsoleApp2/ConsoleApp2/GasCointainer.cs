@@ -10,7 +10,7 @@ public class GasCointainer : Container,  IHazardNotifier
     {
         Pressure = pressure;
     }
-    public void Unload()
+    public new void Unload()
     {
         CargoWeight = 0.05 * CargoWeight;
     }
